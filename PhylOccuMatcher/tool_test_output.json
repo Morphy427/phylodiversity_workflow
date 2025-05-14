@@ -1,0 +1,90 @@
+{
+    "summary": {
+        "num_errors": 0,
+        "num_failures": 0,
+        "num_skips": 0,
+        "num_tests": 1
+    },
+    "tests": [
+        {
+            "data": {
+                "inputs": {
+                    "occupancy": {
+                        "id": "160e05004f01d24a",
+                        "src": "hda"
+                    },
+                    "phylogeny": {
+                        "id": "fb871f917e2ba338",
+                        "src": "hda"
+                    }
+                },
+                "job": {
+                    "command_line": "Rscript '/home/elouan/projet_mnhn/stage_mnhn_repos/PhylOccuMatcher/PhylOccuMatcher.R' '/tmp/tmpf__q3a9o/files/6/e/6/dataset_6e621290-d02a-472a-a6a5-6f41476e0172.dat' '/tmp/tmpf__q3a9o/files/f/1/1/dataset_f11f1984-b613-42bb-a90a-9e9ba7a10a16.dat' '/tmp/tmpf__q3a9o/job_working_directory/000/3/outputs/dataset_1f9d2847-0bb6-4303-a5d9-70cd0b80d0dd.dat' '/tmp/tmpf__q3a9o/job_working_directory/000/3/outputs/dataset_81b1807c-08a9-4e68-84f4-ba3973692027.dat'",
+                    "command_version": "",
+                    "copied_from_job_id": null,
+                    "create_time": "2025-05-06T08:06:39.639990",
+                    "dependencies": [],
+                    "exit_code": 0,
+                    "external_id": "100191",
+                    "galaxy_version": "24.2",
+                    "handler": null,
+                    "history_id": "fb871f917e2ba338",
+                    "id": "9aa354a1e95d591e",
+                    "inputs": {
+                        "occupancy": {
+                            "id": "160e05004f01d24a",
+                            "src": "hda",
+                            "uuid": "f11f1984-b613-42bb-a90a-9e9ba7a10a16"
+                        },
+                        "phylogeny": {
+                            "id": "fb871f917e2ba338",
+                            "src": "hda",
+                            "uuid": "6e621290-d02a-472a-a6a5-6f41476e0172"
+                        }
+                    },
+                    "job_messages": [],
+                    "job_metrics": [],
+                    "job_runner_name": null,
+                    "job_stderr": "",
+                    "job_stdout": "",
+                    "model_class": "Job",
+                    "output_collections": {},
+                    "outputs": {
+                        "output1": {
+                            "id": "9aa354a1e95d591e",
+                            "src": "hda",
+                            "uuid": "1f9d2847-0bb6-4303-a5d9-70cd0b80d0dd"
+                        },
+                        "output2": {
+                            "id": "a26e9fd048e401ba",
+                            "src": "hda",
+                            "uuid": "81b1807c-08a9-4e68-84f4-ba3973692027"
+                        }
+                    },
+                    "params": {
+                        "__input_ext": "\"input\"",
+                        "chromInfo": "\"/tmp/tmpf__q3a9o/galaxy-dev/tool-data/shared/ucsc/chrom/?.len\"",
+                        "dbkey": "\"?\""
+                    },
+                    "state": "ok",
+                    "stderr": "Loading required package: BiocGenerics\n\nAttaching package: \u2018BiocGenerics\u2019\n\nThe following object is masked from \u2018package:phyloregion\u2019:\n\n    counts\n\nThe following objects are masked from \u2018package:stats\u2019:\n\n    IQR, mad, sd, var, xtabs\n\nThe following objects are masked from \u2018package:base\u2019:\n\n    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,\n    as.data.frame, basename, cbind, colnames, dirname, do.call,\n    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,\n    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,\n    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,\n    tapply, union, unique, unsplit, which.max, which.min\n\nLoading required package: MatrixGenerics\nLoading required package: matrixStats\n\nAttaching package: \u2018MatrixGenerics\u2019\n\nThe following objects are masked from \u2018package:matrixStats\u2019:\n\n    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,\n    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,\n    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,\n    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,\n    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,\n    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,\n    colWeightedMeans, colWeightedMedians, colWeightedSds,\n    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,\n    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,\n    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,\n    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,\n    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,\n    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,\n    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,\n    rowWeightedSds, rowWeightedVars\n\nLoading required package: S4Vectors\nLoading required package: stats4\n\nAttaching package: \u2018S4Vectors\u2019\n\nThe following objects are masked from \u2018package:Matrix\u2019:\n\n    expand, unname\n\nThe following object is masked from \u2018package:utils\u2019:\n\n    findMatches\n\nThe following objects are masked from \u2018package:base\u2019:\n\n    I, expand.grid, unname\n\nLoading required package: S4Arrays\nLoading required package: abind\nLoading required package: IRanges\n\nAttaching package: \u2018S4Arrays\u2019\n\nThe following object is masked from \u2018package:abind\u2019:\n\n    abind\n\nThe following object is masked from \u2018package:base\u2019:\n\n    rowsum\n\n",
+                    "stdout": "",
+                    "tool_id": "PhylOccuMatcher",
+                    "tool_stderr": "Loading required package: BiocGenerics\n\nAttaching package: \u2018BiocGenerics\u2019\n\nThe following object is masked from \u2018package:phyloregion\u2019:\n\n    counts\n\nThe following objects are masked from \u2018package:stats\u2019:\n\n    IQR, mad, sd, var, xtabs\n\nThe following objects are masked from \u2018package:base\u2019:\n\n    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,\n    as.data.frame, basename, cbind, colnames, dirname, do.call,\n    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,\n    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,\n    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,\n    tapply, union, unique, unsplit, which.max, which.min\n\nLoading required package: MatrixGenerics\nLoading required package: matrixStats\n\nAttaching package: \u2018MatrixGenerics\u2019\n\nThe following objects are masked from \u2018package:matrixStats\u2019:\n\n    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,\n    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,\n    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,\n    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,\n    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,\n    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,\n    colWeightedMeans, colWeightedMedians, colWeightedSds,\n    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,\n    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,\n    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,\n    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,\n    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,\n    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,\n    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,\n    rowWeightedSds, rowWeightedVars\n\nLoading required package: S4Vectors\nLoading required package: stats4\n\nAttaching package: \u2018S4Vectors\u2019\n\nThe following objects are masked from \u2018package:Matrix\u2019:\n\n    expand, unname\n\nThe following object is masked from \u2018package:utils\u2019:\n\n    findMatches\n\nThe following objects are masked from \u2018package:base\u2019:\n\n    I, expand.grid, unname\n\nLoading required package: S4Arrays\nLoading required package: abind\nLoading required package: IRanges\n\nAttaching package: \u2018S4Arrays\u2019\n\nThe following object is masked from \u2018package:abind\u2019:\n\n    abind\n\nThe following object is masked from \u2018package:base\u2019:\n\n    rowsum\n\n",
+                    "tool_stdout": "",
+                    "update_time": "2025-05-06T08:07:14.194015",
+                    "user_email": "planemo@galaxyproject.org",
+                    "user_id": "fb871f917e2ba338"
+                },
+                "status": "success",
+                "test_index": 0,
+                "time_seconds": 83.49192404747009,
+                "tool_id": "PhylOccuMatcher",
+                "tool_version": "1.0+galaxy0"
+            },
+            "has_data": true,
+            "id": "PhylOccuMatcher-0"
+        }
+    ],
+    "version": "0.1"
+}
