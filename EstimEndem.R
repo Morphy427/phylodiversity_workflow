@@ -33,7 +33,7 @@ if (length(args)<5){stop('Usage : sparseMatrix.csv tree.txt grid.shp')
 
   nb_clust <- as.integer(args[4])
 
-  clust_method <- args[5]
+  clust_method <- toString(args[5])
   
   # calculate phylogenetic Beta diversity - a phylogenetic distance matrix between grid cells
   phylo_beta <- phylobeta(comm_matrix, comm_tree, index.family = "sorensen")

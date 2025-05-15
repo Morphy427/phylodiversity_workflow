@@ -36,7 +36,7 @@
     <tests>
         <test>
             <param name="phylogeny" value="tree_file"/>
-            <param name="occupancy" value="matrix_file"/>
+            <param name="occupancy" value="actinos_test"/>
             <output name="output1" file="output1" ftype="newick"/>
             <output name="output2" file="output2" ftype="tabular"/>
         </test>

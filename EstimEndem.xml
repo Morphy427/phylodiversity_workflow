@@ -60,7 +60,7 @@
 
     <tests>
         <test>
-            <param name="phylogeny" value="tree_file.txt"/>
+            <param name="phylogeny" value="tree_file"/>
             <param name="occupancy" value="matrix_file"/>
             <param name="coordinates_file_input" value="composite_dataset/shapefile" ftype="shp">
                 <composite_data value="composite_dataset/shapefile.shp"/>
