@@ -1,7 +1,7 @@
 name: PyloIndex
 owner: ecology 
 description: Tools to computes the phylodiversity index.
-homepage_url: https://github.com/
+homepage_url: https://github.com/Morphy427/phylodiversity_workflow
 long_description: |
   This tool computes the phylodiversity index based on matched phylogenetic and occupancy data.
 remote_repository_url: https://github.com/galaxyecology/tools-ecology/tree/master/tools/Phylodiversity_workflow

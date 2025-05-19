@@ -1,7 +1,7 @@
 name: EstimEndem
 owner: ecology 
 description: Tools to estimates the endemism of each cell in a spatial grid.
-homepage_url: https://github.com/
+homepage_url: https://github.com/Morphy427/phylodiversity_workflow
 long_description: |
   This tool estimates the endemism of each cell in a spatial grid using the provided phylogeny, occupancy data, and spatial coordinates.
 remote_repository_url: https://github.com/galaxyecology/tools-ecology/tree/master/tools/Phylodiversity_workflow
